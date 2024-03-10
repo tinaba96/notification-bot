@@ -203,7 +203,7 @@ function deteriorationCheck(sheet, link, desktopResult, mobileResult, difference
     msg = `Lighthouse Score Notification \n
     URL: ${link} 
 
-    // Lighthouse Score Sheet : 
+    // Lighthouse Score Sheet : // put google spreadsheet link
 
     Desktop \n
     Accessibility: ${desktopResult[0]}
@@ -220,7 +220,7 @@ function deteriorationCheck(sheet, link, desktopResult, mobileResult, difference
     pwa: ${mobileResult[3]}
     seo: ${mobileResult[4]}`;
 
-    // LighthouseScoreSheet : 
+    // LighthouseScoreSheet : // put google spreadsheet link
 
     // defines the channel where the Slackbot posts the message
     if (postSlackbot(msg, channelId)) {
